@@ -57,7 +57,8 @@ build_script:
 
 after_build:
   - cd C:\%PROJECT_NAME%\build\%configuration%\
-  - windeployqt.exe --no-opengl-sw --no-translations --no-system-d3d-compiler -no-angle ./qvisualisation.exe 
+  - windeployqt.exe --no-translations --no-system-d3d-compiler -no-angle ./qvisualisation.exe 
+# - windeployqt.exe --no-opengl-sw --no-translations --no-system-d3d-compiler -no-angle ./qvisualisation.exe   
   - 7z a %PROJECT_NAME%-win-%platform%.zip ./*
   - move %PROJECT_NAME%-win-%platform%.zip C:\%PROJECT_NAME%\%PROJECT_NAME%-win-%platform%.zip
 
