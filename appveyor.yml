@@ -51,8 +51,8 @@ before_build:
     - md build
 
 build_script:
+  - qmake visualisation.pro 
   - cd build
-  - qmake visualisation.pro  
   - cmake .. -G "%generator%"
   - cmake --build . --config "%configuration%"
 
