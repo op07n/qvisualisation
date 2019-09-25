@@ -16,7 +16,7 @@ set(CMAKE_AUTOUIC ON)
 ADD_DEFINITIONS (${QT_DEFINITIONS})
 
 
-find_package (Qt5 REQUIRED COMPONENTS Widgets Core Gui Network printsupport svg webengine webenginewidgets webchannel)
+find_package (Qt5 REQUIRED COMPONENTS Widgets Core Gui Network printsupport svg webengine webenginewidgets webchannel webkit webkitwidgets)
 
 
 INCLUDE_DIRECTORIES(".\\GeneratedFiles")
@@ -51,4 +51,4 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 )
 
 
-qt5_use_modules(qvisualisation Widgets Core Gui Network printsupport svg webengine webenginewidgets webchannel)
+qt5_use_modules(qvisualisation Widgets Core Gui Network printsupport svg webengine webenginewidgets webchannel webkit webkitwidgets)
