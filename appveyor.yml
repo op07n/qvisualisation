@@ -21,12 +21,12 @@ clone_depth: 5
 environment:
   PROJECT_NAME: qvisualisation
   matrix:
-  - id: msvc-x86
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-    platform: x86
-    compiler: msvc-15
-    generator: "Visual Studio 15 2017"
-    QTDIR: "C:\\Qt\\5.13.0\\msvc2017"
+  # - id: msvc-x86
+  #   APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  #   platform: x86
+  #   compiler: msvc-15
+  #   generator: "Visual Studio 15 2017"
+  #   QTDIR: "C:\\Qt\\5.13.0\\msvc2017"
   - id: msvc-x64
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     platform: x64
