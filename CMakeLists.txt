@@ -9,6 +9,8 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
 
 ADD_DEFINITIONS (${QT_DEFINITIONS})
@@ -19,13 +21,16 @@ find_package (Qt5 REQUIRED COMPONENTS Widgets Core Gui Network printsupport svg 
 
 INCLUDE_DIRECTORIES(".\\GeneratedFiles")
 
-set(SRCS main.cpp
-         mainwindow.cpp)
-         
-	 
 
          
-add_executable(${PROJECT_NAME} ${SRCS})
+add_executable(qvisualisation
+    mainwindow.ui
+    mainwindow.cpp
+    main.cpp
+    visualisation.qrc
+)	 
+
+       
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
 	CXX_STANDARD 17
