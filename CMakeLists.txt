@@ -27,6 +27,19 @@ add_executable(qvisualisation
     mainwindow.ui
     mainwindow.cpp
     main.cpp
+    core/visualisationdatamodel.cpp 
+    core/visualisationviewmodel.cpp 
+    core/visualisationviewwidget.cpp 
+    core/scatterplotviewwidget.cpp 
+    core/matrixscatterplotviewwidget.cpp 
+    core/parallelcoordinatesplotviewwidget.cpp 
+    core/visualisationdatamodel.h 
+    core/visualisationviewmodel.h 
+    core/visualisationviewwidget.h 
+    core/scatterplotviewwidget.h 
+    core/matrixscatterplotviewwidget.h 
+    core/parallelcoordinatesplotviewwidget.h 
+    mainwindow.h    
     visualisation.qrc
 )	 
 
