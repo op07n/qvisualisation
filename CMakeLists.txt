@@ -61,7 +61,7 @@ target_link_libraries( qvisualisation Qt5::WebEngineWidgets)
 
 target_link_libraries( qvisualisation Qt5::PrintSupport)
 
-       
+target_link_libraries( qvisualisation Qt5::Svg)       
        
        
 
