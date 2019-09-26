@@ -69,4 +69,13 @@ test: off
 artifacts:
   - path: '%PROJECT_NAME%-win-%platform%.zip'
     name: artifacts
-    
+
+deploy:
+  release: v$(appveyor_build_version)
+  description: qvisualisation
+  tag: v$(appveyor_build_version)
+  provider: GitHub
+  auth_token:
+     secure: yrM69KAMKsN0o1btzkUu5VaJuPoP5UeLEjXAL5Mk1/30WiPKeryMi0GE/PcIy6DO
+  artifact: '%PROJECT_NAME%-win-%platform%.zip'
+  
