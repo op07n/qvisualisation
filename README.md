@@ -3,6 +3,20 @@ Visualisation toolbox based on Qt WebEngine and D3.js
 This toolbox shows how to utilise the latest webengine from Qt to visualise data
 from various sourecs via d3.js.
 
+![MainWindow](screencaptures/MainWindow.png)
+
+![scatter_plot](screencaptures/scatter_plot.png)
+
+![ParallelCoordinatePlot](screencaptures/ParallelCoordinatePlot.png)
+
+![matrix_scatter_plot](screencaptures/matrix_scatter_plot.PNG)
+
+[![Build status](https://ci.appveyor.com/api/projects/status/81ppc65j5se84cqo?svg=true)](https://ci.appveyor.com/project/op07n/qvisualisation)
+
+Compilation in appveyor. Only for Windows.
+
+###  Download [**executable files**](https://github.com/op07n/qvisualisation/releases/latest).
+
 ### Requirements
 1. Qt 5.6.0+ with webengine
 2. QMake
