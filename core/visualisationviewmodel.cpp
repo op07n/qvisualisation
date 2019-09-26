@@ -4,7 +4,7 @@
 ****************************************************************************/
 #include <core/visualisationviewmodel.h>
 #include <core/visualisationdatamodel.h>
-#include <QWebChannel>
+#include <QtWebChannel/QWebChannel>
 
 using namespace Visualisation;
 
