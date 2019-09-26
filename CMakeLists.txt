@@ -16,7 +16,24 @@ set(CMAKE_AUTOUIC ON)
 ADD_DEFINITIONS (${QT_DEFINITIONS})
 
 
-find_package (Qt5 REQUIRED COMPONENTS Widgets Core Gui Network printsupport svg webenginecore webengine webenginewidgets webview webchannel Qml)
+# find_package (Qt5 REQUIRED COMPONENTS Widgets Core Gui Network printsupport svg webenginecore webengine webenginewidgets webview webchannel Qml)
+
+
+SET(QT5_MODULES Widgets Core Gui Network PrintSupport svg webenginecore webengine webenginewidgets webview webchannel Qml)
+
+find_package (Qt5 REQUIRED COMPONENTS ${QT5_MODULES})
+
+TARGET_LINK_LIBRARIES(
+# ${TARGET_NAME}
+qvisualisation
+${CODE_LIB_FILES}
+Qt5::Widgets
+Qt5::PrintSupport 
+Qt5::WebEngine
+Qt5::WebEngineWidgets
+Qt5::WebView
+Qt5::WebChannel
+)
 
 
 INCLUDE_DIRECTORIES(".\\GeneratedFiles")
