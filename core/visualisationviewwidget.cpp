@@ -12,7 +12,7 @@
 #include <QImage>
 #include <QPainter>
 #include <QtPrintSupport/QPrinter> 
-#include <QSvgGenerator>
+#include <QtSvg/QSvgGenerator>
 #include <QDebug>
 
 using namespace Visualisation;
