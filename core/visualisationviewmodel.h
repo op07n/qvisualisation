@@ -5,7 +5,7 @@
 #ifndef VISUALISATIONVIEWMODEL_H
 #define VISUALISATIONVIEWMODEL_H
 
-#include <QWebEngineView>
+#include <QtWebEngineWidgets/QWebEngineView>
 #include <QString>
 
 namespace Visualisation {
