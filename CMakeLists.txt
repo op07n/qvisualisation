@@ -24,12 +24,6 @@ SET(QT5_MODULES Widgets Core Gui Network PrintSupport svg webenginecore webengin
 find_package (Qt5 REQUIRED COMPONENTS ${QT5_MODULES})
 
 
-target_link_libraries( visualisationviewmodel Qt5::WebEngineWidgets)
-
-
-
-target_link_libraries( visualisationviewwidget Qt5::PrintSupport)
-
 
 
 
@@ -58,6 +52,17 @@ add_executable(qvisualisation
     visualisation.qrc
 )	 
 
+       
+       
+       
+target_link_libraries( qvisualisation Qt5::WebEngineWidgets)
+
+
+
+target_link_libraries( qvisualisation Qt5::PrintSupport)
+
+       
+       
        
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
