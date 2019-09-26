@@ -11,7 +11,7 @@
 #include <QMessageBox>
 #include <QImage>
 #include <QPainter>
-#include <QPrinter>
+#include <QtPrintSupport/QPrinter> 
 #include <QSvgGenerator>
 #include <QDebug>
 
